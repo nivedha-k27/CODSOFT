@@ -1,0 +1,21 @@
+tl=[]
+while True:
+  print("1. Add  Task")
+  print("2. View Tasks")
+  print("3. Update Tasks")
+  print("4. Delete Tasks")
+  print("5. Exit To-Do List")
+  ch=int(input("Enter the choice number:"))
+  if ch==1:
+    task=input("Enter task:")
+    tl.append(task)
+  elif ch==2:
+    for i,t in enumerate(tl,start=1):
+      print(i,".",t)
+  elif ch==3:
+    for i,t in enumerate(tl,start=1):
+      print(i,".",t)
+    no=int(input("Enter task number to be updated:"))
+    task=input("Enter new task:")
+    tl[no-1]=task
+    print("New task is updated for given task number")
