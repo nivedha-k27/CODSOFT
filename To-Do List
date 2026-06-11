@@ -19,6 +19,7 @@ while True:
       print("----------------------------------------------------------------------------------------")
       for i,t in enumerate(tl,start=1):
         print(i,".",t)
+      print("----------------------------------------------------------------------------------------")
   elif ch==3:
     for i,t in enumerate(tl,start=1):
       print(i,".",t)
@@ -29,4 +30,11 @@ while True:
 elif ch==4:
   for i,t in enumerate(tl,start=1):
       print(i,".",t)
-  
+  n=int(input("Enter task number to delete:"))
+  tl.pop(n-1)
+  print("Task Removed")
+elif ch==5:
+  print("Program ended")
+  break
+else:
+  print("Invalid Choice")
