@@ -27,14 +27,14 @@ while True:
     ta=input("Enter task:")
     tl[no-1]=ta
     print("Task Updated")
-elif ch==4:
-  for i,t in enumerate(tl,start=1):
+  elif ch==4:
+    for i,t in enumerate(tl,start=1):
       print(i,".",t)
-  n=int(input("Enter task number to delete:"))
-  tl.pop(n-1)
-  print("Task Removed")
-elif ch==5:
-  print("Program ended")
-  break
-else:
-  print("Invalid Choice")
+    n=int(input("Enter task number to delete:"))
+    tl.pop(n-1)
+    print("Task Removed")
+  elif ch==5:
+    print("Program ended")
+    break
+  else:
+    print("Invalid Choice")
